@@ -343,3 +343,31 @@ modal.onclick = function(e) {
         modal.style.display = "none";
     }
 }
+
+const pdfModal = document.getElementById("pdfModal");
+const pdfFrame = document.getElementById("pdfFrame");
+const closePdf = document.querySelector(".close-pdf");
+
+// On écoute le clic sur les liens de documents
+document.querySelectorAll('.doc-card').forEach(link => {
+    link.onclick = function(e) {
+        e.preventDefault(); // Empêche d'ouvrir le lien normalement
+        const pdfUrl = this.getAttribute('href');
+        pdfFrame.src = pdfUrl;
+        pdfModal.style.display = "block";
+    }
+});
+
+// Fermer le PDF
+closePdf.onclick = function() {
+    pdfModal.style.display = "none";
+    pdfFrame.src = ""; // Vide la source pour stopper le chargement
+}
+
+// Fermer si on clique à côté du PDF
+window.onclick = function(event) {
+    if (event.target == pdfModal) {
+        pdfModal.style.display = "none";
+        pdfFrame.src = "";
+    }
+}
