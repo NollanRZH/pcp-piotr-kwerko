@@ -1210,10 +1210,3 @@ h1, h2, .section-title {
 .section {
     background: transparent !important;
 }
-
-/* Petit bonus pour que le bouton brille sur le fond sombre */
-.btn-decouvrir, .hero-content a {
-    background: #0f056b !important; /* Ton bleu fétiche */
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 20px rgba(15, 5, 107, 0.4);
-}
