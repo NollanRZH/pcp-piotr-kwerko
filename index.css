@@ -1206,3 +1206,47 @@ footer a:hover {
     filter: brightness(1.2);
     text-shadow: 0 0 8px var(--accent-color);
 }
+
+.navbar {
+    background: rgba(2, 4, 10, 0.95) !important; /* Noir spatial transparent */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid var(--accent-color) !important; /* Ligne rouge fine */
+}
+
+.nav-link {
+    color: #ffffff !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important; /* Le texte devient rouge au survol */
+}
+
+.section-title {
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* On ajoute une lueur rouge subtile derrière le titre */
+    text-shadow: 0 0 15px rgba(255, 46, 46, 0.4); 
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--accent-color); /* Petite barre rouge sous le titre */
+    margin: 10px auto;
+}
+
+.cta-button, .btn, .social-icon {
+    background-color: var(--accent-color) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: 0 4px 15px rgba(255, 46, 46, 0.3);
+}
+
+.cta-button:hover {
+    background-color: #ff4d4d !important; /* Un rouge un peu plus clair au survol */
+    transform: scale(1.05);
+}
