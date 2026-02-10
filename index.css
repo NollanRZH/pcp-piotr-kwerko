@@ -1182,3 +1182,25 @@ body {
     text-decoration: none !important;
     white-space: nowrap;            /* Empêche le bouton de se couper en deux */
 }
+
+/* STYLE DU FOOTER (Le bas de page) */
+footer {
+    background-color: #02040a !important; /* Fond noir profond */
+    color: #a0aec0 !important;           /* Texte gris bleuté */
+    padding: 30px 0;
+    border-top: 1px solid rgba(255, 46, 46, 0.3); /* Fine ligne rouge en haut */
+    text-align: center;
+}
+
+/* On change la couleur du lien "Retour en haut" */
+footer a {
+    color: #ff2e2e !important; /* Ton rouge accent */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-shadow: 0 0 10px rgba(255, 46, 46, 0.5);
+    text-decoration: underline;
+}
